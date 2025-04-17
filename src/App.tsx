@@ -1,5 +1,6 @@
 import './App.css'
 import Typography from './Components/Typography'
+import TextInput from './Components/TextInput'
 
 function App() {
 
@@ -12,6 +13,8 @@ function App() {
         <Typography variant="h4" size="large">Typography 4</Typography>
         <Typography variant="h5" size='large'>Typography 5</Typography>
         <Typography variant="h6" size="large">Typography 6</Typography>
+        <TextInput label='Name'></TextInput>
+        <TextInput label='Email'></TextInput>
       </div>
     </>
   )
