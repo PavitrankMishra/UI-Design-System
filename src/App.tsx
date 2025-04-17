@@ -10,11 +10,11 @@ function App() {
     <>
       <div className='flex flex-col items-center mt-5'>
         <Typography variant="h1" size="large" className='text-blue-600'>Typography 1</Typography>
-        <Typography variant="h2" size='large'>Typography 2</Typography>
-        <Typography variant="h3" size="large">Typography 3</Typography>
-        <Typography variant="h4" size="large">Typography 4</Typography>
-        <Typography variant="h5" size='large'>Typography 5</Typography>
-        <Typography variant="h6" size="large">Typography 6</Typography>
+        <Typography variant="h2" size='medium' className='text-red-500'>Typography 2</Typography>
+        <Typography variant="h3" size="small" className='text-green-500'>Typography 3</Typography>
+        <Typography variant="h4" size="large" className='text-orange-400'>Typography 4</Typography>
+        <Typography variant="h5" size='medium' className='text-amber-400'>Typography 5</Typography>
+        <Typography variant="h6" size="small" className='text-cyan-700'>Typography 6</Typography>
         <TextInput label='Name'></TextInput>
         <TextInput label='Email'></TextInput>
         <Alert title="Alert Info" description='This is description for test alert' variant='info' />
