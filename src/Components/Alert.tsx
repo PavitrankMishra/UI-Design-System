@@ -14,7 +14,7 @@ interface AlertProps extends HTMLAttributes<HTMLDivElement> {
     variant: TVariant
     title?: string;
     description?: string;
-    className?: string
+    className?: string;
 }
 const Alert = ({ variant, title, description, ...props }: AlertProps) => {
     return (
