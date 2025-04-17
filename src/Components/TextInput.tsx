@@ -7,6 +7,7 @@ interface TextInputProps {
     helperText?: string;
     fullWidth?: boolean;
     error?: boolean;
+    className?: string;
 }
 
 const TextInput = ({ label, required, helperText, fullWidth, error, ...props }: TextInputProps) => {
