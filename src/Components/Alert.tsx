@@ -19,12 +19,17 @@ interface AlertProps extends HTMLAttributes<HTMLDivElement> {
 const Alert = ({ variant, title, description, ...props }: AlertProps) => {
     return (
         <div
-            {...props} className={clsx(props.className, "flex flex-col gap-2")}
+            {...props}
+            className={clsx(
+                "p-4 rounded-md flex flex-col gap-1",
+                variant[variant],
+                props.className
+            )}
         >
-            <h6>{title}</h6>
-            <p>{description}</p>
+            {title && <h6 className="font-semibold">{title}</h6>}
+            {description && <p className="text-sm">{description}</p>}
         </div>
-    )
-}
+    );
+};
 
 export default Alert;
